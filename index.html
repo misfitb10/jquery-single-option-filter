@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Single Option Filter</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>jQuery Single Option Filter</h1>
+        </header>
+
+        <main>
+            <h1>Usage</h1>
+            <ol>
+                <li>Use data-filter='filtername' for the trigger (filter), e.g. &lt;a href="#" data-filter="test"&gt; *works only with a-tags*</li>
+                <li>Use data-filter-content='filtername' for the content, e.g. &lt;div data-filter-content="test"&gt;</li>
+                <li>For reset: use 'all' as value of the data-filter</li>
+            </ol>
+
+            <h1>Demo</h1>
+            <ul class="filter__list">
+                <li class="filter__listItem">
+                    <a href="#brown" data-filter="brown">Brown</a>
+                </li>
+                <li class="filter__listItem">
+                    <a href="#blue" data-filter="blue">Blue</a>
+                </li>
+                <li class="filter__listItem">
+                    <a href="#green" data-filter="green">Green</a>
+                </li>
+                <li class="filter__listItem">
+                    <a href="#all" data-filter="all">Reset</a>
+                </li>
+                <li class="filter__listItem">
+                    <a href="#nofilter">No data filter, so it doesn't work here!</a>
+                </li>
+            </ul>
+
+            <div class="filter__content">
+                <div class="bg__block bg--brown" data-filter-content="brown"></div>
+                <div class="bg__block bg--blue" data-filter-content="blue"></div>
+                <div class="bg__block bg--green" data-filter-content="green"></div>
+                <div class="bg__block bg--blue" data-filter-content="blue"></div>
+                <div class="bg__block bg--brown" data-filter-content="brown"></div>
+                <div class="bg__block bg--blue" data-filter-content="blue"></div>
+                <div class="bg__block bg--green" data-filter-content="green"></div>
+                <div class="bg__block bg--blue" data-filter-content="blue"></div>
+                <div class="bg__block bg--brown" data-filter-content="brown"></div>
+                <div class="bg__block bg--blue" data-filter-content="blue"></div>
+                <div class="bg__block bg--green" data-filter-content="green"></div>
+                <div class="bg__block bg--brown" data-filter-content="brown"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
