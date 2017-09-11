@@ -28,7 +28,6 @@ body {
 .filter__listItem a {
     display: inline-block;
     border: 2px solid #000;
-    background-color: #f7f4e8;
     color: #4a4a4a;
     padding: 7px 10px;
     text-decoration: none;
@@ -36,7 +35,8 @@ body {
 }
 
 .filter__listItem a:hover {
-    background-color: #dedbd1;
+    background-color: #000;
+    color: #fff;
 }
 
 /*
@@ -46,7 +46,8 @@ body {
     width: 100px;
     height: 100px;
     display: inline-block;
-    transition: background 1s;
+    background-color: transparent;
+    transition: all 1s;
 }
 
 .bg--brown {
