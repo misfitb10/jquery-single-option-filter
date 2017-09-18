@@ -23,7 +23,7 @@ function filter() {
     }
 }
 
-$(document).ready(function() {
+$(function() {
     filter();
 });
 
